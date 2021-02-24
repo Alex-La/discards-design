@@ -17,6 +17,9 @@ const Start = () => {
       <ListItemLink to="/preloader">
         <ListItemText primary="Preloader" />
       </ListItemLink>
+      <ListItemLink to="/login">
+        <ListItemText primary="Вход" />
+      </ListItemLink>
     </List>
   );
 };
