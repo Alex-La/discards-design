@@ -26,6 +26,9 @@ const Start = () => {
       <ListItemLink to="/lazy">
         <ListItemText primary="Lazy load" />
       </ListItemLink>
+      <ListItemLink to="/Main">
+        <ListItemText primary="Главная" />
+      </ListItemLink>
     </List>
   );
 };
