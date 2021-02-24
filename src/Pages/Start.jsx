@@ -23,6 +23,9 @@ const Start = () => {
       <ListItemLink to="/registration">
         <ListItemText primary="Регистрация" />
       </ListItemLink>
+      <ListItemLink to="/lazy">
+        <ListItemText primary="Lazy load" />
+      </ListItemLink>
     </List>
   );
 };

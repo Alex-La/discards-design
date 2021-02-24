@@ -11,6 +11,7 @@ import Start from "../Pages/Start";
 import Preloader from "../Pages/Preloader";
 import Login from "../Pages/Login";
 import Registration from "../Pages/Registration";
+import Lazy from "../Pages/Lazy";
 
 const Routes = () => {
   return (
@@ -20,6 +21,7 @@ const Routes = () => {
         <Route path="/preloader" component={Preloader} />
         <Route path="/login" component={Login} />
         <Route path="/registration" component={Registration} />
+        <Route path="/lazy" component={Lazy} />
         <Redirect to="/" />
       </Switch>
     </Router>
