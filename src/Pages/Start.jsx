@@ -20,6 +20,9 @@ const Start = () => {
       <ListItemLink to="/login">
         <ListItemText primary="Вход" />
       </ListItemLink>
+      <ListItemLink to="/registration">
+        <ListItemText primary="Регистрация" />
+      </ListItemLink>
     </List>
   );
 };

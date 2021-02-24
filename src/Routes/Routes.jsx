@@ -10,6 +10,7 @@ import {
 import Start from "../Pages/Start";
 import Preloader from "../Pages/Preloader";
 import Login from "../Pages/Login";
+import Registration from "../Pages/Registration";
 
 const Routes = () => {
   return (
@@ -18,6 +19,7 @@ const Routes = () => {
         <Route exact path="/" component={Start} />
         <Route path="/preloader" component={Preloader} />
         <Route path="/login" component={Login} />
+        <Route path="/registration" component={Registration} />
         <Redirect to="/" />
       </Switch>
     </Router>
