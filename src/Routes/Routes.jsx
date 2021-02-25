@@ -17,6 +17,7 @@ import SuccessAdd from "../Pages/SuccessAdd";
 import HandAdd from "../Pages/HandAdd";
 import Catalog from "../Pages/Catalog";
 import Selection from "../Pages/Selection";
+import Profile from "../Pages/Profile";
 
 const Routes = () => {
   return (
@@ -32,6 +33,7 @@ const Routes = () => {
         <Route path="/hand-add" component={HandAdd} />
         <Route path="/catalog" component={Catalog} />
         <Route path="/selection" component={Selection} />
+        <Route path="/profile" component={Profile} />
         <Redirect to="/" />
       </Switch>
     </Router>

@@ -22,7 +22,7 @@ const Selection = () => {
         </p>
 
         <Grid spacing={2} container justify="center" style={{ marginTop: 20 }}>
-          {new Array(9).fill().map((_, index) => (
+          {new Array(9).fill().map(() => (
             <Grid item>
               <div
                 style={{
