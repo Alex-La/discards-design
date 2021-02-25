@@ -38,6 +38,9 @@ const Start = () => {
       <ListItemLink to="/catalog">
         <ListItemText primary="Каталог" />
       </ListItemLink>
+      <ListItemLink to="/selection">
+        <ListItemText primary="Каталог>Смотреть подборку" />
+      </ListItemLink>
     </List>
   );
 };
