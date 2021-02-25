@@ -23,6 +23,7 @@ import Contacts from "../Pages/Contacts";
 import Support from "../Pages/Support";
 import Partners from "../Pages/Partners";
 import About from "../Pages/About";
+import SuccessSend from "../Pages/SuccessSend";
 
 const Routes = () => {
   return (
@@ -44,6 +45,7 @@ const Routes = () => {
         <Route path="/support" component={Support} />
         <Route path="/partners" component={Partners} />
         <Route path="/about" component={About} />
+        <Route path="/success-send" component={SuccessSend} />
         <Redirect to="/" />
       </Switch>
     </Router>

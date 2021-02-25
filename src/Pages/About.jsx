@@ -2,7 +2,6 @@ import React from "react";
 
 import { BackArrow } from "../Icons";
 import BottomNav from "../Components/BottomNav";
-import { NavLink } from "react-router-dom";
 
 const About = () => {
   return (
