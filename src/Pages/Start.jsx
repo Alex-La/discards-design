@@ -56,6 +56,9 @@ const Start = () => {
       <ListItemLink to="/support">
         <ListItemText primary="Поддержка" />
       </ListItemLink>
+      <ListItemLink to="/about">
+        <ListItemText primary="О приложении" />
+      </ListItemLink>
     </List>
   );
 };

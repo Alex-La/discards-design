@@ -22,6 +22,7 @@ import Settings from "../Pages/Settings";
 import Contacts from "../Pages/Contacts";
 import Support from "../Pages/Support";
 import Partners from "../Pages/Partners";
+import About from "../Pages/About";
 
 const Routes = () => {
   return (
@@ -42,6 +43,7 @@ const Routes = () => {
         <Route path="/contacts" component={Contacts} />
         <Route path="/support" component={Support} />
         <Route path="/partners" component={Partners} />
+        <Route path="/about" component={About} />
         <Redirect to="/" />
       </Switch>
     </Router>
