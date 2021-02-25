@@ -13,6 +13,7 @@ import Login from "../Pages/Login";
 import Registration from "../Pages/Registration";
 import Lazy from "../Pages/Lazy";
 import Main from "../Pages/Main";
+import SuccessAdd from "../Pages/SuccessAdd";
 
 const Routes = () => {
   return (
@@ -24,6 +25,7 @@ const Routes = () => {
         <Route path="/registration" component={Registration} />
         <Route path="/lazy" component={Lazy} />
         <Route path="/main" component={Main} />
+        <Route path="/success-add" component={SuccessAdd} />
         <Redirect to="/" />
       </Switch>
     </Router>
