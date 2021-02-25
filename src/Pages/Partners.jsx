@@ -1,0 +1,89 @@
+import React from "react";
+
+import { BackArrow } from "../Icons";
+import BottomNav from "../Components/BottomNav";
+
+const Partners = () => {
+  return (
+    <div style={{ padding: 20, marginBottom: 56 }}>
+      <BackArrow />
+
+      <p
+        style={{
+          fontWeight: 700,
+          fontSize: 30,
+          lineHeight: "36.57px",
+          marginTop: 15,
+          color: "#343434",
+        }}
+      >
+        Партнерам
+      </p>
+
+      <p
+        style={{
+          fontWeight: 600,
+          fontSize: 14,
+          lineHeight: "23.8px",
+          marginTop: 4,
+          color: "#5b5b5b",
+        }}
+      >
+        Чтобы добавить свой магазин или внести изменения в существующий,
+        обратитесь в нашу службу поддержки для корпоративных клиентов:
+      </p>
+
+      <div style={{ marginTop: 10, borderBottom: "1px solid #D5D5D5" }}>
+        <p
+          style={{
+            fontWeight: 500,
+            fontSize: 11,
+            lineHeight: "11px",
+            color: "#5b5b5b",
+          }}
+        >
+          Телефон
+        </p>
+        <p
+          style={{
+            margin: "12px 0",
+            fontWeight: 500,
+            fontSize: 14,
+            lineHeight: "11px",
+            color: "#000000",
+          }}
+        >
+          +7 999 888 77 66
+        </p>
+      </div>
+
+      <div style={{ marginTop: 10, borderBottom: "1px solid #D5D5D5" }}>
+        <p
+          style={{
+            fontWeight: 500,
+            fontSize: 11,
+            lineHeight: "11px",
+            color: "#5b5b5b",
+          }}
+        >
+          Эл. почта
+        </p>
+        <p
+          style={{
+            margin: "12px 0",
+            fontWeight: 500,
+            fontSize: 14,
+            lineHeight: "11px",
+            color: "#000000",
+          }}
+        >
+          info@discards.ru
+        </p>
+      </div>
+
+      <BottomNav />
+    </div>
+  );
+};
+
+export default Partners;
