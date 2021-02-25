@@ -158,6 +158,7 @@ const About = () => {
         <p
           style={{
             margin: "12px 0",
+            marginTop: 16,
             fontWeight: 500,
             fontSize: 14,
             lineHeight: "11px",
@@ -172,6 +173,7 @@ const About = () => {
         <p
           style={{
             margin: "12px 0",
+            marginTop: 16,
             fontWeight: 500,
             fontSize: 14,
             lineHeight: "11px",
