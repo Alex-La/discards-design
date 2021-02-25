@@ -3,7 +3,7 @@ import React from "react";
 import BottomNav from "../Components/BottomNav";
 import { InputAdornment, Fab } from "@material-ui/core";
 import { SearchTextField } from "../MUI/CssComponents";
-import { Search, Notify, Plus } from "../Icons";
+import { Search, Notify, Plus, Add } from "../Icons";
 
 const Main = () => {
   return (
@@ -69,7 +69,9 @@ const Main = () => {
               backgroundColor: "#FF5151",
               marginRight: 10,
             }}
-          ></Fab>
+          >
+            <Add />
+          </Fab>
           <p
             style={{
               fontWeight: 600,
