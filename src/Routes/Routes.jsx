@@ -15,6 +15,7 @@ import Lazy from "../Pages/Lazy";
 import Main from "../Pages/Main";
 import SuccessAdd from "../Pages/SuccessAdd";
 import HandAdd from "../Pages/HandAdd";
+import Catalog from "../Pages/Catalog";
 
 const Routes = () => {
   return (
@@ -28,6 +29,7 @@ const Routes = () => {
         <Route path="/main" component={Main} />
         <Route path="/success-add" component={SuccessAdd} />
         <Route path="/hand-add" component={HandAdd} />
+        <Route path="/catalog" component={Catalog} />
         <Redirect to="/" />
       </Switch>
     </Router>
