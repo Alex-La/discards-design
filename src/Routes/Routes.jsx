@@ -18,6 +18,7 @@ import HandAdd from "../Pages/HandAdd";
 import Catalog from "../Pages/Catalog";
 import Selection from "../Pages/Selection";
 import Profile from "../Pages/Profile";
+import Settings from "../Pages/Settings";
 
 const Routes = () => {
   return (
@@ -34,6 +35,7 @@ const Routes = () => {
         <Route path="/catalog" component={Catalog} />
         <Route path="/selection" component={Selection} />
         <Route path="/profile" component={Profile} />
+        <Route path="/settings" component={Settings} />
         <Redirect to="/" />
       </Switch>
     </Router>
