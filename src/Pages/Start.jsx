@@ -50,6 +50,9 @@ const Start = () => {
       <ListItemLink to="/contacts">
         <ListItemText primary="Контакты" />
       </ListItemLink>
+      <ListItemLink to="/support">
+        <ListItemText primary="Поддержка" />
+      </ListItemLink>
     </List>
   );
 };
