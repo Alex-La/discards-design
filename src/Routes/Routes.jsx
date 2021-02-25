@@ -19,6 +19,7 @@ import Catalog from "../Pages/Catalog";
 import Selection from "../Pages/Selection";
 import Profile from "../Pages/Profile";
 import Settings from "../Pages/Settings";
+import Contacts from "../Pages/Contacts";
 
 const Routes = () => {
   return (
@@ -36,6 +37,7 @@ const Routes = () => {
         <Route path="/selection" component={Selection} />
         <Route path="/profile" component={Profile} />
         <Route path="/settings" component={Settings} />
+        <Route path="/contacts" component={Contacts} />
         <Redirect to="/" />
       </Switch>
     </Router>

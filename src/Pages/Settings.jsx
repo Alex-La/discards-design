@@ -16,6 +16,7 @@ const Settings = () => {
           fontSize: 30,
           lineHeight: "36.57px",
           marginTop: 15,
+          color: "#343434",
         }}
       >
         Настройки

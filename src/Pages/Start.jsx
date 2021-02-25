@@ -47,6 +47,9 @@ const Start = () => {
       <ListItemLink to="/settings">
         <ListItemText primary="Настройки" />
       </ListItemLink>
+      <ListItemLink to="/contacts">
+        <ListItemText primary="Контакты" />
+      </ListItemLink>
     </List>
   );
 };
