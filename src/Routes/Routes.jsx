@@ -14,6 +14,7 @@ import Registration from "../Pages/Registration";
 import Lazy from "../Pages/Lazy";
 import Main from "../Pages/Main";
 import SuccessAdd from "../Pages/SuccessAdd";
+import HandAdd from "../Pages/HandAdd";
 
 const Routes = () => {
   return (
@@ -26,6 +27,7 @@ const Routes = () => {
         <Route path="/lazy" component={Lazy} />
         <Route path="/main" component={Main} />
         <Route path="/success-add" component={SuccessAdd} />
+        <Route path="/hand-add" component={HandAdd} />
         <Redirect to="/" />
       </Switch>
     </Router>

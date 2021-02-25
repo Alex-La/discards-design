@@ -32,6 +32,9 @@ const Start = () => {
       <ListItemLink to="/success-add">
         <ListItemText primary="Успешное добавление" />
       </ListItemLink>
+      <ListItemLink to="/hand-add">
+        <ListItemText primary="Добавление карты вручную" />
+      </ListItemLink>
     </List>
   );
 };
