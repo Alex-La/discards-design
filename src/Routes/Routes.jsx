@@ -24,6 +24,8 @@ import Support from "../Pages/Support";
 import Partners from "../Pages/Partners";
 import About from "../Pages/About";
 import SuccessSend from "../Pages/SuccessSend";
+import NotFound from "../Pages/NotFound";
+import ConnectionLost from "../Pages/ConnectionLost";
 
 const Routes = () => {
   return (
@@ -46,6 +48,8 @@ const Routes = () => {
         <Route path="/partners" component={Partners} />
         <Route path="/about" component={About} />
         <Route path="/success-send" component={SuccessSend} />
+        <Route path="/not-found" component={NotFound} />
+        <Route path="/connection-lost" component={ConnectionLost} />
         <Redirect to="/" />
       </Switch>
     </Router>

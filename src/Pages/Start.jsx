@@ -62,6 +62,12 @@ const Start = () => {
       <ListItemLink to="/success-send">
         <ListItemText primary="success" />
       </ListItemLink>
+      <ListItemLink to="/not-found">
+        <ListItemText primary="404 Не найдена" />
+      </ListItemLink>
+      <ListItemLink to="/connection-lost">
+        <ListItemText primary="Потеря соединения" />
+      </ListItemLink>
     </List>
   );
 };
