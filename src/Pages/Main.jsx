@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 import BottomNav from "../Components/BottomNav";
 import { InputAdornment, Fab } from "@material-ui/core";
 import { SearchTextField } from "../MUI/CssComponents";
 import { Search, Notify, Plus, Add } from "../Icons";
 
+import BottomModal from "../Components/Main/BottomModal";
+
 const Main = () => {
+  const [drawerState, setDrawerState] = useState(false);
+  const toggleDrawer = (state) => setDrawerState(state);
+
   return (
     <>
       <div style={{ padding: 20, marginBottom: 56 }}>
@@ -40,6 +45,7 @@ const Main = () => {
 
         <div style={{ marginTop: 32, padding: "0 22px" }}>
           <div
+            onClick={() => toggleDrawer(true)}
             style={{
               width: "100%",
               height: "55vh",
@@ -63,6 +69,7 @@ const Main = () => {
           }}
         >
           <Fab
+            onClick={() => toggleDrawer(true)}
             size="small"
             aria-label="add"
             style={{
@@ -73,6 +80,7 @@ const Main = () => {
             <Add />
           </Fab>
           <p
+            onClick={() => toggleDrawer(true)}
             style={{
               fontWeight: 600,
               fontSize: 15,
@@ -83,6 +91,8 @@ const Main = () => {
             Добавить
           </p>
         </div>
+
+        <BottomModal drawerState={drawerState} toggleDrawer={toggleDrawer} />
       </div>
       <BottomNav />
     </>

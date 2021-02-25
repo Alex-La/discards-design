@@ -12,6 +12,7 @@ const BottomNav = () => {
   const [value, setValue] = React.useState(1);
   return (
     <AppBar
+      component="div"
       position="fixed"
       style={{ top: "auto", bottom: 0, boxShadow: "none" }}
     >
