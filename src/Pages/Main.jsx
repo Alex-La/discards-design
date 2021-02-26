@@ -68,17 +68,18 @@ const Main = () => {
             alignItems: "center",
           }}
         >
-          <Fab
+          <button
+            className="btn-circle"
             onClick={() => toggleDrawer(true)}
-            size="small"
-            aria-label="add"
             style={{
+              width: 45,
+              height: 45,
               backgroundColor: "#FF5151",
               marginRight: 10,
             }}
           >
             <Add />
-          </Fab>
+          </button>
           <p
             onClick={() => toggleDrawer(true)}
             style={{

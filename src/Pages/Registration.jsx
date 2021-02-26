@@ -18,15 +18,9 @@ const Registration = () => {
         </p>
 
         <div style={{ textAlign: "start", marginTop: 18 }}>
-          <Fab
-            size="small"
-            aria-label="add"
-            style={{
-              backgroundColor: "white",
-            }}
-          >
+          <button className="btn-circle">
             <Back />
-          </Fab>
+          </button>
         </div>
 
         <p

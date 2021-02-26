@@ -35,6 +35,18 @@ p {
   color: #ff5151;
 }
 
+.btn-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: white;
+  border: 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+}
+
 .center-wrapper {
   display: flex;
   justify-content: center;
