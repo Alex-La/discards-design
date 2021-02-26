@@ -1,10 +1,9 @@
 import React from "react";
 
-import { BackArrow, Close, Camera, Light, Gallery } from "../Icons";
+import { BackArrow, Close } from "../Icons";
 import BottomNav from "../Components/BottomNav";
 import { Grid } from "@material-ui/core";
 import Pere from "../assets/pere.png";
-import Card from "../assets/card.png";
 
 const AddPhotoConfirm = () => {
   return (
