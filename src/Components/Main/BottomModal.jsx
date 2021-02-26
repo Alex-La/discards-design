@@ -71,7 +71,7 @@ const BottomModal = ({ drawerState, toggleDrawer }) => {
         </p>
 
         <button
-          className="btn-shadow"
+          className="btn btn-shadow"
           style={{ marginBottom: 24, marginTop: 12 }}
         >
           Добавить
