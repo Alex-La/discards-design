@@ -606,3 +606,52 @@ export const Magnit = ({ width = "95%" }) => (
     </defs>
   </svg>
 );
+
+export const Card = () => (
+  <svg
+    width="158"
+    height="99"
+    viewBox="0 0 158 99"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M152.796 0.0637207H5.20443C2.36513 0.0637207 0.0634308 2.37225 0.0634308 5.21997V93.5637C0.0634308 96.4114 2.36513 98.72 5.20443 98.72H152.796C155.635 98.72 157.937 96.4114 157.937 93.5637V5.21997C157.937 2.37225 155.635 0.0637207 152.796 0.0637207Z"
+      fill="#E10F19"
+    />
+    <path
+      d="M134.505 98.6321C90.4829 98.6321 58.9501 98.6321 58.9501 98.6321C58.9501 65.8978 93.585 39.3665 137.607 39.3665C158.857 39.3665 158.398 34.1794 156.605 66.8645C154.72 101.239 164.341 98.6321 134.505 98.6321Z"
+      fill="url(#paint0_linear)"
+      fill-opacity="0.5"
+    />
+    <path
+      d="M47.6368 36.845C26.8122 36.845 9.93049 20.3775 9.93049 0.0637324C5.65507 0.063731 22.3597 0.06372 43.1844 0.0637207C64.0088 0.0637218 85.3433 0.0637359 85.3433 0.0637359C85.3433 20.3775 68.4613 36.845 47.6368 36.845Z"
+      fill="url(#paint1_linear)"
+      fill-opacity="0.6"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear"
+        x1="240.715"
+        y1="48.4405"
+        x2="101.404"
+        y2="121.983"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-opacity="0.17" />
+        <stop offset="1" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear"
+        x1="76.3572"
+        y1="-24.1706"
+        x2="14.8614"
+        y2="15.1862"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-opacity="0.17" />
+        <stop offset="1" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+  </svg>
+);

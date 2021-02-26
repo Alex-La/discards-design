@@ -29,6 +29,7 @@ import ConnectionLost from "../Pages/ConnectionLost";
 import AddPhoto from "../Pages/AddPhoto";
 import AddPhotoConfirm from "../Pages/AddPhotoConfirm";
 import HasCards from "../Pages/HasCards";
+import Search from "../Pages/Search";
 
 const Routes = () => {
   return (
@@ -56,6 +57,7 @@ const Routes = () => {
         <Route path="/add-photo" component={AddPhoto} />
         <Route path="/add-photo-confirm" component={AddPhotoConfirm} />
         <Route path="/has-card" component={HasCards} />
+        <Route path="/search" component={Search} />
         <Redirect to="/" />
       </Switch>
     </Router>
