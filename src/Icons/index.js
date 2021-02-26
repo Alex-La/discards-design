@@ -562,3 +562,47 @@ export const Close = () => (
     />
   </svg>
 );
+
+export const Magnit = ({ width = "95%" }) => (
+  <svg
+    style={{ maxWidth: width }}
+    width="287"
+    viewBox="0 0 287 461"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      y="461"
+      width="460.63"
+      height="287"
+      rx="15"
+      transform="rotate(-90 0 461)"
+      fill="#E10F19"
+    />
+
+    <defs>
+      <linearGradient
+        id="paint0_linear"
+        x1="140.5"
+        y1="-116.33"
+        x2="278.466"
+        y2="225.505"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-opacity="0.17" />
+        <stop offset="1" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear"
+        x1="-70.5"
+        y1="238.396"
+        x2="44.4746"
+        y2="417.514"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-opacity="0.17" />
+        <stop offset="1" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+  </svg>
+);

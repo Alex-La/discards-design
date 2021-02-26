@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/catalog.css";
 
 import BottomNav from "../Components/BottomNav";
 import { InputAdornment } from "@material-ui/core";

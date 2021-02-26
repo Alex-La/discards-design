@@ -4,3 +4,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif !important;
 }
+
+.slick-list {
+  padding-left: 20px !important;
+}
