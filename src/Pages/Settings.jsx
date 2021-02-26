@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Button } from "@material-ui/core";
 import { BackArrow } from "../Icons";
 import BottomNav from "../Components/BottomNav";
 import { CssTextField } from "../MUI/CssComponents";
@@ -80,22 +79,15 @@ const Settings = () => {
           style={{ marginBottom: 10 }}
         />
 
-        <Button
-          variant="contained"
-          color="secondary"
-          fullWidth
-          style={{ marginTop: 5 }}
-        >
+        <button className="btn btn-shadow" style={{ marginTop: 5 }}>
           Сохранить изменения
-        </Button>
-        <Button
-          variant="outlined"
-          color="secondary"
-          fullWidth
+        </button>
+        <button
+          className="btn btn-shadow btn-outlined"
           style={{ marginTop: 14 }}
         >
           Выйти из аккаунта
-        </Button>
+        </button>
       </form>
 
       <BottomNav />

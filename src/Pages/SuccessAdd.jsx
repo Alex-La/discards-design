@@ -1,7 +1,6 @@
 import React from "react";
 
 import { SuccessRound } from "../Icons";
-import { Button } from "@material-ui/core";
 
 const SuccessAdd = () => {
   return (
@@ -30,22 +29,15 @@ const SuccessAdd = () => {
           Теперь она всегда будет с Вами
         </p>
 
-        <Button
-          style={{ marginTop: 20 }}
-          variant="contained"
-          color="secondary"
-          fullWidth
-        >
+        <button style={{ marginTop: 20 }} className="btn btn-shadow">
           Перейти к карте
-        </Button>
-        <Button
+        </button>
+        <button
           style={{ marginTop: 16 }}
-          variant="outlined"
-          color="secondary"
-          fullWidth
+          className="btn btn-shadow btn-outlined"
         >
           Ко всем картам
-        </Button>
+        </button>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import React from "react";
 import { Fab } from "@material-ui/core";
 import { Back } from "../Icons";
 
-import { CssTextField, CssButton } from "../MUI/CssComponents";
+import { CssTextField } from "../MUI/CssComponents";
 import { NavLink } from "react-router-dom";
 
 const Registration = () => {
@@ -78,14 +78,9 @@ const Registration = () => {
             style={{ marginTop: 11 }}
           />
 
-          <CssButton
-            style={{ marginTop: 15 }}
-            variant="contained"
-            color="secondary"
-            fullWidth
-          >
+          <button className="btn btn-shadow" style={{ marginTop: 15 }}>
             Зарегистрироваться
-          </CssButton>
+          </button>
         </form>
 
         <p

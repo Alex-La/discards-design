@@ -3,7 +3,6 @@ import React from "react";
 import { BackArrow } from "../Icons";
 import BottomNav from "../Components/BottomNav";
 import { CssTextField } from "../MUI/CssComponents";
-import { Button } from "@material-ui/core";
 
 const Support = () => {
   return (
@@ -59,14 +58,9 @@ const Support = () => {
           style={{ marginTop: 11 }}
         />
 
-        <Button
-          variant="contained"
-          color="secondary"
-          fullWidth
-          style={{ marginTop: 11 }}
-        >
+        <button className="btn" style={{ marginTop: 11 }}>
           Отправить сообщение
-        </Button>
+        </button>
       </form>
 
       <BottomNav />

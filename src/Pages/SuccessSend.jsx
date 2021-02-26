@@ -1,7 +1,6 @@
 import React from "react";
 
 import { SuccessRound } from "../Icons";
-import { Button } from "@material-ui/core";
 
 const SuccessSend = () => {
   return (
@@ -30,14 +29,9 @@ const SuccessSend = () => {
           В ближайшее время мы с вами свяжемся
         </p>
 
-        <Button
-          style={{ marginTop: 20 }}
-          variant="contained"
-          color="secondary"
-          fullWidth
-        >
+        <button style={{ marginTop: 20 }} className="btn">
           Вернуться назад
-        </Button>
+        </button>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { SwipeableDrawer, Button } from "@material-ui/core";
+import { SwipeableDrawer } from "@material-ui/core";
 import { Camera, Dots } from "../../Icons";
 const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
@@ -70,14 +70,12 @@ const BottomModal = ({ drawerState, toggleDrawer }) => {
           Держите карту внутри рамки и она будет отсканирована
         </p>
 
-        <Button
+        <button
+          className="btn-shadow"
           style={{ marginBottom: 24, marginTop: 12 }}
-          variant="contained"
-          color="secondary"
-          fullWidth
         >
           Добавить
-        </Button>
+        </button>
       </div>
 
       <div
@@ -112,14 +110,12 @@ const BottomModal = ({ drawerState, toggleDrawer }) => {
           Заполнить данные карты вручную.
         </p>
 
-        <Button
+        <button
           style={{ marginBottom: 24, marginTop: 24 }}
-          variant="outlined"
-          color="secondary"
-          fullWidth
+          className="btn btn-shadow btn-outlined"
         >
           Добавить
-        </Button>
+        </button>
       </div>
     </SwipeableDrawer>
   );

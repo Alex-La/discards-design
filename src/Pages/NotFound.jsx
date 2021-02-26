@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Button } from "@material-ui/core";
-
 const NotFound = () => {
   return (
     <div className="center-wrapper">
@@ -48,14 +46,9 @@ const NotFound = () => {
           Что-то пошло не так, данная страница не найдена!
         </p>
 
-        <Button
-          variant="contained"
-          color="secondary"
-          fullWidth
-          style={{ marginTop: 28 }}
-        >
+        <button className="btn" style={{ marginTop: 28 }}>
           Вернуться на главную
-        </Button>
+        </button>
       </div>
     </div>
   );

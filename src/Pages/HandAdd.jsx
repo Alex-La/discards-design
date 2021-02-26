@@ -1,7 +1,7 @@
 import React from "react";
 
 import { BackArrow } from "../Icons";
-import { Button, MenuItem } from "@material-ui/core";
+import { MenuItem } from "@material-ui/core";
 import { CssTextField } from "../MUI/CssComponents";
 
 import BottomNav from "../Components/BottomNav";
@@ -67,14 +67,9 @@ const HandAdd = () => {
           fullWidth
         />
 
-        <Button
-          style={{ marginTop: 16 }}
-          variant="contained"
-          color="secondary"
-          fullWidth
-        >
+        <button style={{ marginTop: 16 }} className="btn btn-shadow">
           Добавить карту
-        </Button>
+        </button>
       </form>
 
       <BottomNav />

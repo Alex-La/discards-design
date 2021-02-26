@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Button } from "@material-ui/core";
 import { Cloud } from "../Icons";
 
 const ConnectionLost = () => {
@@ -41,14 +40,9 @@ const ConnectionLost = () => {
           Вернитесь на главную, или перезагрузите страницу
         </p>
 
-        <Button
-          variant="contained"
-          color="secondary"
-          fullWidth
-          style={{ marginTop: 28 }}
-        >
+        <button className="btn" style={{ marginTop: 28 }}>
           Вернуться на главную
-        </Button>
+        </button>
       </div>
     </div>
   );

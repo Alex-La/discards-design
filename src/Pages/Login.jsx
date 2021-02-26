@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CssTextField, CssButton } from "../MUI/CssComponents";
+import { CssTextField } from "../MUI/CssComponents";
 import { NavLink } from "react-router-dom";
 
 const Login = () => {
@@ -46,14 +46,9 @@ const Login = () => {
             style={{ marginTop: 11 }}
           />
 
-          <CssButton
-            style={{ marginTop: 15 }}
-            variant="contained"
-            color="secondary"
-            fullWidth
-          >
+          <button style={{ marginTop: 15 }} className="btn btn-shadow">
             Войти
-          </CssButton>
+          </button>
         </form>
 
         <p
