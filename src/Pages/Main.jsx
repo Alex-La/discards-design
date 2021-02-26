@@ -13,7 +13,7 @@ const Main = () => {
 
   return (
     <>
-      <div style={{ padding: 20, marginBottom: 56 }}>
+      <div style={{ padding: 20, marginBottom: 70 }}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <SearchTextField
             style={{ marginRight: 13 }}

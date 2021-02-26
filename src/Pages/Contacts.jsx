@@ -5,7 +5,7 @@ import { BackArrow } from "../Icons";
 
 const Contacts = () => {
   return (
-    <div style={{ padding: 20, marginBottom: 56 }}>
+    <div style={{ padding: 20, marginBottom: 70 }}>
       <BackArrow />
 
       <p

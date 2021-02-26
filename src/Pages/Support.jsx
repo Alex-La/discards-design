@@ -7,7 +7,7 @@ import { Button } from "@material-ui/core";
 
 const Support = () => {
   return (
-    <div style={{ padding: 20, marginBottom: 56 }}>
+    <div style={{ padding: 20, marginBottom: 70 }}>
       <BackArrow />
 
       <p

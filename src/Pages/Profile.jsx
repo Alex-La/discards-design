@@ -23,7 +23,7 @@ import {
 
 const Profile = () => {
   return (
-    <div style={{ padding: 20, marginBottom: 56 }}>
+    <div style={{ padding: 20, marginBottom: 70 }}>
       <BackArrow />
       <p
         style={{

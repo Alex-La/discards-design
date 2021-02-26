@@ -7,7 +7,7 @@ import { CssTextField } from "../MUI/CssComponents";
 
 const Settings = () => {
   return (
-    <div style={{ padding: 20, marginBottom: 56 }}>
+    <div style={{ padding: 20, marginBottom: 70 }}>
       <BackArrow />
 
       <p

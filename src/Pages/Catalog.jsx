@@ -12,7 +12,7 @@ import Sport from "../assets/sport.png";
 
 const Catalog = () => {
   return (
-    <div style={{ marginBottom: 56 }}>
+    <div style={{ marginBottom: 70 }}>
       <div style={{ padding: 20, paddingBottom: 0 }}>
         <p
           style={{

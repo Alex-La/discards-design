@@ -7,7 +7,7 @@ import Sport from "../assets/sport.png";
 
 const Selection = () => {
   return (
-    <div style={{ marginBottom: 56 }}>
+    <div style={{ marginBottom: 70 }}>
       <div style={{ padding: 20 }}>
         <BackArrow />
         <p

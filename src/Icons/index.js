@@ -18,6 +18,7 @@ export const Back = () => (
 
 export const Catalog = ({ active = false }) => (
   <svg
+    style={{ marginBottom: 8 }}
     width="18"
     height="18"
     viewBox="0 0 18 18"
@@ -35,6 +36,7 @@ export const Catalog = ({ active = false }) => (
 
 export const My = ({ active = false }) => (
   <svg
+    style={{ marginBottom: 8 }}
     width="27"
     height="21"
     viewBox="0 0 27 21"
@@ -61,6 +63,7 @@ export const My = ({ active = false }) => (
 
 export const Profile = ({ active = false }) => (
   <svg
+    style={{ marginBottom: 8 }}
     width="24"
     height="24"
     viewBox="0 0 24 24"
