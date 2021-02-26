@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BackArrow, Close } from "../Icons";
+import { BackArrow, Close, Camera, Light, Gallery } from "../Icons";
 import BottomNav from "../Components/BottomNav";
 import { Grid } from "@material-ui/core";
 import Pere from "../assets/pere.png";
@@ -82,6 +82,34 @@ const AddPhoto = () => {
           </p>
         </Grid>
       </Grid>
+
+      <div
+        style={{
+          display: "flex",
+          marginTop: 56,
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <button
+          className="btn-circle"
+          style={{ width: 76, height: 76, boxShadow: "none" }}
+        >
+          <Light />
+        </button>
+        <button
+          className="btn-circle"
+          style={{ width: 76, height: 76, background: "#FF5151" }}
+        >
+          <Camera color="white" />
+        </button>
+        <button
+          className="btn-circle"
+          style={{ width: 76, height: 76, boxShadow: "none" }}
+        >
+          <Gallery />
+        </button>
+      </div>
 
       <BottomNav />
     </div>
