@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import BottomNav from "../Components/BottomNav";
-import { InputAdornment, Fab } from "@material-ui/core";
+import { InputAdornment } from "@material-ui/core";
 import { SearchTextField } from "../MUI/CssComponents";
 import { Search, Notify, Plus, Add } from "../Icons";
 

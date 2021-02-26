@@ -26,6 +26,7 @@ import About from "../Pages/About";
 import SuccessSend from "../Pages/SuccessSend";
 import NotFound from "../Pages/NotFound";
 import ConnectionLost from "../Pages/ConnectionLost";
+import AddPhoto from "../Pages/AddPhoto";
 
 const Routes = () => {
   return (
@@ -50,6 +51,7 @@ const Routes = () => {
         <Route path="/success-send" component={SuccessSend} />
         <Route path="/not-found" component={NotFound} />
         <Route path="/connection-lost" component={ConnectionLost} />
+        <Route path="/add-photo" component={AddPhoto} />
         <Redirect to="/" />
       </Switch>
     </Router>
