@@ -32,6 +32,9 @@ const Start = () => {
       <ListItemLink to="/add-photo">
         <ListItemText primary="Добавление через фото" />
       </ListItemLink>
+      <ListItemLink to="/add-photo-confirm">
+        <ListItemText primary="Добавление через фото>подтверждение" />
+      </ListItemLink>
       <ListItemLink to="/success-add">
         <ListItemText primary="Успешное добавление" />
       </ListItemLink>

@@ -27,6 +27,7 @@ import SuccessSend from "../Pages/SuccessSend";
 import NotFound from "../Pages/NotFound";
 import ConnectionLost from "../Pages/ConnectionLost";
 import AddPhoto from "../Pages/AddPhoto";
+import AddPhotoConfirm from "../Pages/AddPhotoConfirm";
 
 const Routes = () => {
   return (
@@ -52,6 +53,7 @@ const Routes = () => {
         <Route path="/not-found" component={NotFound} />
         <Route path="/connection-lost" component={ConnectionLost} />
         <Route path="/add-photo" component={AddPhoto} />
+        <Route path="/add-photo-confirm" component={AddPhotoConfirm} />
         <Redirect to="/" />
       </Switch>
     </Router>
