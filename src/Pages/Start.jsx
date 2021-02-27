@@ -92,6 +92,9 @@ const Start = () => {
       <ListItemLink to="/connection-lost">
         <ListItemText primary="Потеря соединения" />
       </ListItemLink>
+      <ListItemLink to="/video">
+        <ListItemText primary="Видео" />
+      </ListItemLink>
     </List>
   );
 };
