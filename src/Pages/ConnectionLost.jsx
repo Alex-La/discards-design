@@ -7,14 +7,7 @@ const ConnectionLost = () => {
   return (
     <div className="center-wrapper">
       <div className="wrap">
-        <img src={Logo} alt="logo" width={150} />
-
-        <p style={{ fontWeight: 700, fontSize: 43, lineHeight: "52.42px" }}>
-          DISCARDS
-        </p>
-        <p style={{ fontWeight: 600, fontSize: 14, lineHeight: "23.8px" }}>
-          Любые карты в одном месте
-        </p>
+        <img src={Logo} alt="logo" width={200} />
 
         <p
           style={{
@@ -22,7 +15,6 @@ const ConnectionLost = () => {
             fontSize: 24,
             lineHeight: "29.26px",
             color: "#5b5b5b",
-            marginTop: 16,
             marginBottom: 25,
           }}
         >

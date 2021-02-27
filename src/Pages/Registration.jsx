@@ -17,18 +17,10 @@ const Registration = () => {
       </div>
       <div className="center-wrapper">
         <div className="wrap">
-          <img src={Logo} alt="logo" width={150} />
-
-          <p style={{ fontWeight: 700, fontSize: 43, lineHeight: "52.42px" }}>
-            DISCARDS
-          </p>
-          <p style={{ fontWeight: 600, fontSize: 14, lineHeight: "23.8px" }}>
-            Любые карты в одном месте
-          </p>
+          <img src={Logo} alt="logo" width={200} />
 
           <p
             style={{
-              marginTop: 10,
               marginBottom: 22,
               textAlign: "start",
               fontWeight: 700,
