@@ -1,11 +1,14 @@
 import React from "react";
 
 import { Cloud } from "../Icons";
+import Logo from "../assets/logo.svg";
 
 const ConnectionLost = () => {
   return (
     <div className="center-wrapper">
       <div className="wrap">
+        <img src={Logo} alt="logo" width={150} />
+
         <p style={{ fontWeight: 700, fontSize: 43, lineHeight: "52.42px" }}>
           DISCARDS
         </p>

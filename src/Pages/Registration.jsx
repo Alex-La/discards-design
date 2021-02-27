@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Back } from "../Icons";
-
+import Logo from "../assets/logo.svg";
 import { CssTextField } from "../MUI/CssComponents";
 import { NavLink } from "react-router-dom";
 
@@ -9,6 +9,8 @@ const Registration = () => {
   return (
     <div className="center-wrapper">
       <div className="wrap">
+        <img src={Logo} alt="logo" width={150} />
+
         <p style={{ fontWeight: 700, fontSize: 43, lineHeight: "52.42px" }}>
           DISCARDS
         </p>
