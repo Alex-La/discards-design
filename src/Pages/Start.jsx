@@ -62,6 +62,9 @@ const Start = () => {
       <ListItemLink to="/single-market">
         <ListItemText primary="Одиночный магазин" />
       </ListItemLink>
+      <ListItemLink to="/reviews">
+        <ListItemText primary="Отзывы" />
+      </ListItemLink>
       <ListItemLink to="/profile">
         <ListItemText primary="Профиль" />
       </ListItemLink>
