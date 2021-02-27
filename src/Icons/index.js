@@ -333,7 +333,7 @@ export const SuccessRound = () => (
   </svg>
 );
 
-export const BackArrow = () => (
+export const BackArrow = ({ color = "black" }) => (
   <svg
     width="10"
     height="16"
@@ -343,7 +343,7 @@ export const BackArrow = () => (
   >
     <path
       d="M0.439793 7.99996C0.439793 7.7132 0.549281 7.42649 0.767797 7.20786L7.64751 0.328226C8.08514 -0.109409 8.79469 -0.109409 9.23215 0.328226C9.66961 0.765684 9.66961 1.47509 9.23215 1.91276L3.1446 7.99996L9.23194 14.0872C9.66939 14.5248 9.66939 15.2342 9.23194 15.6716C8.79448 16.1094 8.08493 16.1094 7.64729 15.6716L0.767585 8.79205C0.549032 8.57332 0.439793 8.2866 0.439793 7.99996Z"
-      fill="black"
+      fill={color}
     />
   </svg>
 );
@@ -653,5 +653,61 @@ export const Card = () => (
         <stop offset="1" stop-opacity="0" />
       </linearGradient>
     </defs>
+  </svg>
+);
+
+export const Barcode = () => (
+  <svg
+    width="260"
+    height="62"
+    viewBox="0 0 260 62"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M2.4 0H0V61.6H2.4V0Z" fill="black" />
+    <path d="M7.99998 0H5.59998V61.6H7.99998V0Z" fill="black" />
+    <path d="M13.6845 0H10.9475V61.372H13.6845V0Z" fill="black" />
+    <path d="M27.3687 0H16.4213V61.372H27.3687V0Z" fill="black" />
+    <path d="M38.3156 0H33.0526V61.372H38.3156V0Z" fill="black" />
+    <path d="M46.5265 0H44V61.372H46.5265V0Z" fill="black" />
+    <path d="M54.7367 0H49.0527V61.372H54.7367V0Z" fill="black" />
+    <path d="M65.6836 0H59.9996V61.372H65.6836V0Z" fill="black" />
+    <path d="M76.6312 0H70.9473V61.372H76.6312V0Z" fill="black" />
+    <path d="M84.8418 0H79.1578V61.372H84.8418V0Z" fill="black" />
+    <path d="M90.3156 0H87.5786V61.372H90.3156V0Z" fill="black" />
+    <path d="M103.999 0H98.526V61.372H103.999V0Z" fill="black" />
+    <path d="M114.947 0H112.421V61.372H114.947V0Z" fill="black" />
+    <path d="M123.158 0H120.632V61.372H123.158V0Z" fill="black" />
+    <path d="M128.8 0H125.6V61.6H128.8V0Z" fill="black" />
+    <path d="M134.4 0H131.2V61.6H134.4V0Z" fill="black" />
+    <path d="M139.369 0H136.842V61.372H139.369V0Z" fill="black" />
+    <path d="M150.316 0H147.789V61.372H150.316V0Z" fill="black" />
+    <path d="M158.526 0H156V61.372H158.526V0Z" fill="black" />
+    <path d="M166.737 0H164.21V61.372H166.737V0Z" fill="black" />
+    <path d="M177.684 0H175.158V61.372H177.684V0Z" fill="black" />
+    <path d="M188.632 0H186.105V61.372H188.632V0Z" fill="black" />
+    <path d="M200 0H194.316V61.372H200V0Z" fill="black" />
+    <path d="M210.947 0H205.263V61.372H210.947V0Z" fill="black" />
+    <path d="M219.157 0H213.473V61.372H219.157V0Z" fill="black" />
+    <path d="M230.105 0H224.421V61.372H230.105V0Z" fill="black" />
+    <path d="M240.841 0H232.631V61.372H240.841V0Z" fill="black" />
+    <path d="M249.053 0H246.316V61.372H249.053V0Z" fill="black" />
+    <path d="M254.4 0H252V61.6H254.4V0Z" fill="black" />
+    <path d="M260 0H257.6V61.6H260V0Z" fill="black" />
+  </svg>
+);
+
+export const Star = () => (
+  <svg
+    width="22"
+    height="20"
+    viewBox="0 0 22 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M10.1289 0.695319L7.57814 5.86719L1.87111 6.69923C0.847675 6.84766 0.437519 8.10938 1.17971 8.83204L5.30861 12.8555L4.33205 18.5391C4.15627 19.5664 5.2383 20.3359 6.14455 19.8555L11.25 17.1719L16.3555 19.8555C17.2617 20.332 18.3438 19.5664 18.168 18.5391L17.1914 12.8555L21.3203 8.83204C22.0625 8.10938 21.6524 6.84766 20.6289 6.69923L14.9219 5.86719L12.3711 0.695319C11.9141 -0.226556 10.5899 -0.238274 10.1289 0.695319Z"
+      fill="#215BA5"
+    />
   </svg>
 );

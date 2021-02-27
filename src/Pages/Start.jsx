@@ -47,6 +47,9 @@ const Start = () => {
       <ListItemLink to="/search">
         <ListItemText primary="Главная>поиск" />
       </ListItemLink>
+      <ListItemLink to="/single-card">
+        <ListItemText primary="Одиночная карточка" />
+      </ListItemLink>
       <ListItemLink to="/catalog">
         <ListItemText primary="Каталог" />
       </ListItemLink>
