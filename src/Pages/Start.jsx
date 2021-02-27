@@ -50,6 +50,9 @@ const Start = () => {
       <ListItemLink to="/single-card">
         <ListItemText primary="Одиночная карточка" />
       </ListItemLink>
+      <ListItemLink to="/card-full">
+        <ListItemText primary="Полный экран" />
+      </ListItemLink>
       <ListItemLink to="/catalog">
         <ListItemText primary="Каталог" />
       </ListItemLink>

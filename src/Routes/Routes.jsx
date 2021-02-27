@@ -31,6 +31,7 @@ import AddPhotoConfirm from "../Pages/AddPhotoConfirm";
 import HasCards from "../Pages/HasCards";
 import Search from "../Pages/Search";
 import SingleCard from "../Pages/SingleCard";
+import CardFull from "../Pages/CardFull";
 
 const Routes = () => {
   return (
@@ -60,6 +61,7 @@ const Routes = () => {
         <Route path="/has-card" component={HasCards} />
         <Route path="/search" component={Search} />
         <Route path="/single-card" component={SingleCard} />
+        <Route path="/card-full" component={CardFull} />
         <Redirect to="/" />
       </Switch>
     </Router>
