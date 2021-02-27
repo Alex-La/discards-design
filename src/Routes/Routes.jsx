@@ -32,6 +32,7 @@ import HasCards from "../Pages/HasCards";
 import Search from "../Pages/Search";
 import SingleCard from "../Pages/SingleCard";
 import CardFull from "../Pages/CardFull";
+import SingleMarket from "../Pages/SingleMarket";
 
 const Routes = () => {
   return (
@@ -62,6 +63,7 @@ const Routes = () => {
         <Route path="/search" component={Search} />
         <Route path="/single-card" component={SingleCard} />
         <Route path="/card-full" component={CardFull} />
+        <Route path="/single-market" component={SingleMarket} />
         <Redirect to="/" />
       </Switch>
     </Router>
