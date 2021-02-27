@@ -3,12 +3,13 @@ import React from "react";
 import { BackArrow } from "../Icons";
 import { MenuItem } from "@material-ui/core";
 import { CssTextField } from "../MUI/CssComponents";
-
+import { useHistory } from "react-router-dom";
 import BottomNav from "../Components/BottomNav";
 
 const HandAdd = () => {
+  const history = useHistory();
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ padding: 20 }} onClick={() => history.goBack()}>
       <BackArrow />
       <p
         style={{

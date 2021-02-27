@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory, withRouter } from "react-router-dom";
 
 import {
   BottomNavigation,
@@ -22,8 +23,16 @@ const useStyles = makeStyles({
 });
 
 const BottomNav = () => {
+  const history = useHistory();
   const classes = useStyles();
-  const [value, setValue] = React.useState(1);
+  const [value, setValue] = React.useState(null);
+
+  useEffect(() => {
+    if (history.location.pathname === "/catalog") setValue(0);
+    if (history.location.pathname === "/Main") setValue(1);
+    if (history.location.pathname === "/profile") setValue(2);
+  }, [history.location.pathname]);
+
   return (
     <AppBar
       component="div"
@@ -39,18 +48,21 @@ const BottomNav = () => {
         showLabels
       >
         <BottomNavigationAction
+          onClick={() => history.push("/catalog")}
           disableTouchRipple
           className={classes.label}
           label="Каталог"
           icon={<Catalog active={value === 0} />}
         />
         <BottomNavigationAction
+          onClick={() => history.push("/Main")}
           disableTouchRipple
           className={classes.label}
           label="Мои"
           icon={<My active={value === 1} />}
         />
         <BottomNavigationAction
+          onClick={() => history.push("/profile")}
           disableTouchRipple
           className={classes.label}
           label="Профиль"
@@ -61,4 +73,4 @@ const BottomNav = () => {
   );
 };
 
-export default BottomNav;
+export default withRouter(BottomNav);

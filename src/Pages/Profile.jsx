@@ -20,11 +20,16 @@ import {
   List,
   ListItemIcon,
 } from "@material-ui/core";
+import { useHistory, NavLink } from "react-router-dom";
 
 const Profile = () => {
+  const history = useHistory();
+
   return (
     <div style={{ padding: 20, marginBottom: 70 }}>
-      <BackArrow />
+      <div onClick={() => history.goBack()}>
+        <BackArrow />
+      </div>
       <p
         style={{
           fontWeight: 700,
@@ -35,6 +40,7 @@ const Profile = () => {
       >
         Иван Козловский
       </p>
+
       <p
         style={{
           fontWeight: 600,
@@ -44,10 +50,12 @@ const Profile = () => {
           color: "#FF5151",
         }}
       >
-        Настройки профиля
-        <span style={{ float: "right" }}>
-          <ArrowRigth red />
-        </span>
+        <NavLink to="/settings">
+          Настройки профиля
+          <span style={{ float: "right" }}>
+            <ArrowRigth red />
+          </span>
+        </NavLink>
       </p>
 
       <Grid container style={{ margin: "20px 0" }}>
@@ -78,7 +86,11 @@ const Profile = () => {
       </Grid>
 
       <List component="ul">
-        <ListItem button style={{ paddingLeft: 0, paddingRight: 0 }}>
+        <ListItem
+          button
+          style={{ paddingLeft: 0, paddingRight: 0 }}
+          onClick={() => history.push("/settings")}
+        >
           <ListItemIcon style={{ minWidth: 0, marginRight: 10 }}>
             <Settings />
           </ListItemIcon>
@@ -94,7 +106,11 @@ const Profile = () => {
           <ArrowRigth red />
         </ListItem>
 
-        <ListItem button style={{ paddingLeft: 0, paddingRight: 0 }}>
+        <ListItem
+          button
+          style={{ paddingLeft: 0, paddingRight: 0 }}
+          onClick={() => history.push("/contacts")}
+        >
           <ListItemIcon style={{ minWidth: 0, marginRight: 10 }}>
             <Contacts />
           </ListItemIcon>
@@ -110,7 +126,11 @@ const Profile = () => {
           <ArrowRigth red />
         </ListItem>
 
-        <ListItem button style={{ paddingLeft: 0, paddingRight: 0 }}>
+        <ListItem
+          button
+          style={{ paddingLeft: 0, paddingRight: 0 }}
+          onClick={() => history.push("/partners")}
+        >
           <ListItemIcon style={{ minWidth: 0, marginRight: 10 }}>
             <Partners />
           </ListItemIcon>
@@ -126,7 +146,11 @@ const Profile = () => {
           <ArrowRigth red />
         </ListItem>
 
-        <ListItem button style={{ paddingLeft: 0, paddingRight: 0 }}>
+        <ListItem
+          button
+          style={{ paddingLeft: 0, paddingRight: 0 }}
+          onClick={() => history.push("/about")}
+        >
           <ListItemIcon style={{ minWidth: 0, marginRight: 10 }}>
             <Info />
           </ListItemIcon>
@@ -142,7 +166,11 @@ const Profile = () => {
           <ArrowRigth red />
         </ListItem>
 
-        <ListItem button style={{ paddingLeft: 0, paddingRight: 0 }}>
+        <ListItem
+          button
+          style={{ paddingLeft: 0, paddingRight: 0 }}
+          onClick={() => history.push("/support")}
+        >
           <ListItemIcon style={{ minWidth: 0, marginRight: 10 }}>
             <Faq />
           </ListItemIcon>

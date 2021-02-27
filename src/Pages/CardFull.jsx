@@ -2,8 +2,11 @@ import React from "react";
 
 import { Close, Restart, BarcodeVertical } from "../Icons";
 import Sport from "../assets/sport 1.png";
+import { useHistory } from "react-router-dom";
 
 const CardFull = () => {
+  const history = useHistory();
+
   return (
     <div
       style={{
@@ -20,6 +23,7 @@ const CardFull = () => {
       }}
     >
       <div
+        onClick={() => history.goBack()}
         style={{
           height: "100%",
           display: "flex",

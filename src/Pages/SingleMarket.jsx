@@ -2,8 +2,11 @@ import React from "react";
 
 import { BackArrow, ArrowRigth, Dollar } from "../Icons";
 import Sport from "../assets/sport 1.png";
+import { useHistory } from "react-router-dom";
 
 const SingleMarket = () => {
+  const history = useHistory();
+
   return (
     <div
       style={{
@@ -19,7 +22,9 @@ const SingleMarket = () => {
       }}
     >
       <div style={{ padding: 20 }}>
-        <BackArrow color="white" />
+        <div onClick={() => history.goBack()}>
+          <BackArrow color="white" />
+        </div>
         <div
           style={{
             display: "flex",

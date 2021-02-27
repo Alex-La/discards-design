@@ -2,11 +2,16 @@ import React from "react";
 
 import { BackArrow } from "../Icons";
 import BottomNav from "../Components/BottomNav";
+import { useHistory } from "react-router-dom";
 
 const About = () => {
+  const history = useHistory();
+
   return (
     <div style={{ padding: 20, marginBottom: 70 }}>
-      <BackArrow />
+      <div onClick={() => history.goBack()}>
+        <BackArrow />
+      </div>
 
       <p
         style={{

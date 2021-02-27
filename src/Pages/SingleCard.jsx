@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import BottomNav from "../Components/BottomNav";
 import { BackArrow, Barcode, Star } from "../Icons";
 import Sport from "../assets/sport 1.png";
-import { IOSSwitch } from "../MUI/CssComponents";
+import { useHistory } from "react-router-dom";
 import { Switch } from "@material-ui/core";
 
 const SingleCard = () => {
+  const history = useHistory();
   const [checked, setChecked] = useState(false);
   const handleChange = (event) => setChecked(event.target.checked);
 
@@ -18,7 +19,7 @@ const SingleCard = () => {
         height: "95vh",
       }}
     >
-      <div style={{ padding: 20 }}>
+      <div style={{ padding: 20 }} onClick={() => history.goBack()}>
         <BackArrow color="white" />
       </div>
 

@@ -4,12 +4,17 @@ import { Grid } from "@material-ui/core";
 import { BackArrow, Dot } from "../Icons";
 import BottomNav from "../Components/BottomNav";
 import Sport from "../assets/sport.png";
+import { useHistory } from "react-router-dom";
 
 const Selection = () => {
+  const history = useHistory();
+
   return (
     <div style={{ marginBottom: 70 }}>
       <div style={{ padding: 20 }}>
-        <BackArrow />
+        <div onClick={() => history.goBack()}>
+          <BackArrow />
+        </div>
         <p
           style={{
             fontWeight: 700,

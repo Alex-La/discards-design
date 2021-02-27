@@ -4,10 +4,15 @@ import { BackArrow, Close } from "../Icons";
 import BottomNav from "../Components/BottomNav";
 import { Grid } from "@material-ui/core";
 import Pere from "../assets/pere.png";
+import { useHistory } from "react-router-dom";
 
 const AddPhotoConfirm = () => {
+  const history = useHistory();
   return (
-    <div style={{ padding: 20, marginBottom: 70 }}>
+    <div
+      style={{ padding: 20, marginBottom: 70 }}
+      onClick={() => history.goBack()}
+    >
       <BackArrow />
       <p
         style={{
