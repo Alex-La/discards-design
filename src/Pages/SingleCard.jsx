@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import BottomNav from "../Components/BottomNav";
 import { BackArrow, Barcode, Star } from "../Icons";
@@ -7,6 +7,9 @@ import { IOSSwitch } from "../MUI/CssComponents";
 import { Switch } from "@material-ui/core";
 
 const SingleCard = () => {
+  const [checked, setChecked] = useState(false);
+  const handleChange = (event) => setChecked(event.target.checked);
+
   return (
     <div
       style={{
@@ -188,12 +191,16 @@ const SingleCard = () => {
                 ?
               </button>
             </div>
-            <Switch />
+            <Switch checked={checked} onChange={handleChange} />
           </div>
 
           <button
+            style={{
+              marginTop: 14,
+              color: checked ? "#215BA5" : "#898989",
+              borderColor: checked ? "#215BA5" : "#898989",
+            }}
             className="btn btn-outlined"
-            style={{ marginTop: 14, color: "#898989", borderColor: "#898989" }}
           >
             Поделиться
           </button>
