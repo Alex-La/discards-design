@@ -48,7 +48,10 @@ const AddPhotoConfirm = () => {
               src={Pere}
             />
             <span style={{ position: "absolute", right: -10, top: -10 }}>
-              <button className="btn-circle" style={{ width: 20, height: 20 }}>
+              <button
+                className="btn-circle"
+                style={{ width: 20, height: 20, backgroundColor: "white" }}
+              >
                 <Close />
               </button>
             </span>
@@ -69,7 +72,10 @@ const AddPhotoConfirm = () => {
               src={Pere}
             />
             <span style={{ position: "absolute", right: -10, top: -10 }}>
-              <button className="btn-circle" style={{ width: 20, height: 20 }}>
+              <button
+                className="btn-circle"
+                style={{ width: 20, height: 20, backgroundColor: "white" }}
+              >
                 <Close />
               </button>
             </span>

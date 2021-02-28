@@ -17,7 +17,9 @@ const useStyles = makeStyles({
   },
   label: {
     "& .Mui-selected": {
-      color: "#4D4D4D",
+      color: "#FF5151",
+      fontSize: 12,
+      fontWeight: 600,
     },
   },
 });

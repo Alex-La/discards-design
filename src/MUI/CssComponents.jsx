@@ -1,7 +1,47 @@
 import { TextField, withStyles, Switch } from "@material-ui/core";
 
 export const CssTextField = withStyles({
-  root: {},
+  root: {
+    "& label": {
+      color: "#C0C0C0",
+    },
+    "& label.Mui-focused": {
+      color: "#5B5B5B",
+      fontWeight: 500,
+    },
+    "& label.Mui-error": {
+      color: "#F44336",
+    },
+    "& .MuiOutlinedInput-root": {
+      "& input": {
+        color: "#C0C0C0",
+        fontWeight: 500,
+        fontSize: 12,
+        height: 19,
+      },
+      "& input:focus": {
+        color: "#000000",
+        fontWeight: 500,
+        fontSize: 12,
+      },
+      "&.Mui-error input": {
+        color: "#F44336",
+      },
+      "& fieldset": {
+        borderRadius: 5,
+        borderColor: "#D4D4D4",
+      },
+      "&:hover fieldset": {
+        borderColor: "#5B5B5B",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "#5B5B5B",
+      },
+      "&.Mui-error fieldset": {
+        borderColor: "#F44336",
+      },
+    },
+  },
 })(TextField);
 
 export const SearchTextField = withStyles({
@@ -11,9 +51,14 @@ export const SearchTextField = withStyles({
         fontWeight: 400,
       },
       "& fieldset": {
+        color: "#000000",
+        fontWeight: 400,
         borderRadius: 7,
         borderColor: "transparent",
         boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.12)",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "transparent",
       },
     },
   },

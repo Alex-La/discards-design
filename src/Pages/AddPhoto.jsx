@@ -61,7 +61,10 @@ const AddPhoto = () => {
               src={Pere}
             />
             <span style={{ position: "absolute", right: -10, top: -10 }}>
-              <button className="btn-circle" style={{ width: 20, height: 20 }}>
+              <button
+                className="btn-circle"
+                style={{ width: 20, height: 20, backgroundColor: "white" }}
+              >
                 <Close />
               </button>
             </span>
@@ -98,19 +101,26 @@ const AddPhoto = () => {
       >
         <button
           className="btn-circle"
-          style={{ width: 76, height: 76, boxShadow: "none" }}
+          style={{
+            width: 76,
+            height: 76,
+            boxShadow: "none",
+            backgroundColor: "white",
+          }}
         >
           <Light />
         </button>
-        <button
-          className="btn-circle"
-          style={{ width: 76, height: 76, background: "#FF5151" }}
-        >
+        <button className="btn-circle" style={{ width: 76, height: 76 }}>
           <Camera color="white" />
         </button>
         <button
           className="btn-circle"
-          style={{ width: 76, height: 76, boxShadow: "none" }}
+          style={{
+            width: 76,
+            height: 76,
+            boxShadow: "none",
+            backgroundColor: "white",
+          }}
         >
           <Gallery />
         </button>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import BottomNav from "../Components/BottomNav";
 import { InputAdornment } from "@material-ui/core";
 import { SearchTextField } from "../MUI/CssComponents";
-import { Search, Notify, Plus, Add } from "../Icons";
+import { Search, SearchClose, Notify, Plus, Add } from "../Icons";
 
 import BottomModal from "../Components/Main/BottomModal";
 
@@ -24,6 +24,11 @@ const Main = () => {
             startAdornment: (
               <InputAdornment position="start">
                 <Search />
+              </InputAdornment>
+            ),
+            endAdornment: (
+              <InputAdornment position="end">
+                <SearchClose />
               </InputAdornment>
             ),
           }}
