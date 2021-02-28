@@ -4,7 +4,7 @@ import BottomNav from "../Components/BottomNav";
 import { BackArrow, Barcode, Star } from "../Icons";
 import Sport from "../assets/sport 1.png";
 import { useHistory } from "react-router-dom";
-import { Switch } from "@material-ui/core";
+import { CssSwitch } from "../MUI/CssComponents";
 
 const SingleCard = () => {
   const history = useHistory();
@@ -192,7 +192,7 @@ const SingleCard = () => {
                 ?
               </button>
             </div>
-            <Switch checked={checked} onChange={handleChange} />
+            <CssSwitch checked={checked} onChange={handleChange} />
           </div>
 
           <button

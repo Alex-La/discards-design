@@ -64,53 +64,35 @@ export const SearchTextField = withStyles({
   },
 })(TextField);
 
-export const IOSSwitch = withStyles((theme) => ({
+export const CssSwitch = withStyles((theme) => ({
   root: {
-    width: 42,
-    height: 26,
-    padding: 0,
-    margin: theme.spacing(1),
+    width: 60,
+    height: 33,
+    padding: 2,
+    display: "flex",
   },
   switchBase: {
-    padding: 1,
+    padding: 5,
+    color: "#FFFFFF",
     "&$checked": {
-      transform: "translateX(16px)",
-      color: theme.palette.common.white,
+      transform: "translateX(28px)",
+      color: "#215BA5",
       "& + $track": {
-        backgroundColor: "#52d869",
         opacity: 1,
-        border: "none",
+        backgroundColor: "#F1F2F6",
+        borderColor: "#F1F2F6",
       },
-    },
-    "&$focusVisible $thumb": {
-      color: "#52d869",
-      border: "6px solid #fff",
     },
   },
   thumb: {
-    width: 24,
-    height: 24,
+    width: 23,
+    height: 23,
+    boxShadow: "none",
   },
   track: {
-    borderRadius: 26 / 2,
-    border: `1px solid ${theme.palette.grey[400]}`,
-    backgroundColor: theme.palette.grey[50],
-    opacity: 1,
-    transition: theme.transitions.create(["background-color", "border"]),
+    border: 0,
+    borderRadius: 16,
+    backgroundColor: "#F1F2F6",
   },
   checked: {},
-  focusVisible: {},
-}))(({ classes, ...props }) => (
-  <Switch
-    focusVisibleClassName={classes.focusVisible}
-    disableRipple
-    classes={{
-      root: classes.root,
-      switchBase: classes.switchBase,
-      thumb: classes.thumb,
-      track: classes.track,
-      checked: classes.checked,
-    }}
-    {...props}
-  />
-));
+}))(Switch);
