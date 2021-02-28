@@ -1,7 +1,6 @@
 import React from "react";
 
 import { BackArrow } from "../Icons";
-import { MenuItem } from "@material-ui/core";
 import { CssTextField } from "../MUI/CssComponents";
 import { useHistory } from "react-router-dom";
 import BottomNav from "../Components/BottomNav";
@@ -9,8 +8,10 @@ import BottomNav from "../Components/BottomNav";
 const HandAdd = () => {
   const history = useHistory();
   return (
-    <div style={{ padding: 20 }} onClick={() => history.goBack()}>
-      <BackArrow />
+    <div style={{ padding: 20 }}>
+      <div onClick={() => history.goBack()}>
+        <BackArrow />
+      </div>
       <p
         style={{
           fontWeight: 700,
@@ -37,35 +38,49 @@ const HandAdd = () => {
 
       <form>
         <CssTextField
-          style={{ marginTop: 11 }}
           variant="outlined"
-          size="small"
-          value="Hello"
-          fullWidth
           select
-        >
-          <MenuItem>Hello</MenuItem>
-        </CssTextField>
-        <CssTextField
-          style={{ marginTop: 11 }}
-          variant="outlined"
           size="small"
           fullWidth
+          style={{ marginTop: 11 }}
+        >
+          <option>Hello</option>
+          <option>Hello</option>
+          <option>Hello</option>
+          <option>Hello</option>
+          <option>Hello</option>
+          <option>Hello</option>
+        </CssTextField>
+
+        <CssTextField
+          variant="outlined"
+          size="small"
+          placeholder="Введите номер карты"
+          fullWidth
+          style={{ marginTop: 11 }}
         />
+
         <CssTextField
-          style={{ marginTop: 11 }}
           variant="outlined"
-          size="small"
-          fullWidth
           select
-        >
-          <MenuItem>Hello</MenuItem>
-        </CssTextField>
-        <CssTextField
-          style={{ marginTop: 11 }}
-          variant="outlined"
           size="small"
           fullWidth
+          style={{ marginTop: 10 }}
+        >
+          <option>Hello</option>
+          <option>Hello</option>
+          <option>Hello</option>
+          <option>Hello</option>
+          <option>Hello</option>
+          <option>Hello</option>
+        </CssTextField>
+
+        <CssTextField
+          variant="outlined"
+          size="small"
+          placeholder="Скидка по карте"
+          fullWidth
+          style={{ marginTop: 11 }}
         />
 
         <button style={{ marginTop: 16 }} className="btn btn-shadow">
