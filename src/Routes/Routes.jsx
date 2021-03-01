@@ -34,7 +34,6 @@ import SingleCard from "../Pages/SingleCard";
 import CardFull from "../Pages/CardFull";
 import SingleMarket from "../Pages/SingleMarket";
 import Reviews from "../Pages/Reviews";
-import Video from "../Pages/Video";
 
 const Routes = () => {
   return (
@@ -67,7 +66,6 @@ const Routes = () => {
         <Route path="/card-full" component={CardFull} />
         <Route path="/single-market" component={SingleMarket} />
         <Route path="/reviews" component={Reviews} />
-        <Route path="/video" component={Video} />
         <Redirect to="/" />
       </Switch>
     </Router>
