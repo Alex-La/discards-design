@@ -10,11 +10,10 @@ import { useHistory } from "react-router-dom";
 const AddPhoto = () => {
   const history = useHistory();
   return (
-    <div
-      style={{ padding: 20, marginBottom: 70 }}
-      onClick={() => history.goBack()}
-    >
-      <BackArrow />
+    <div style={{ padding: 20, marginBottom: 70 }}>
+      <div onClick={() => history.goBack()}>
+        <BackArrow />
+      </div>
       <p
         style={{
           fontWeight: 700,
